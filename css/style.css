@@ -28,17 +28,55 @@ div.clearfix {
   color: red;
 }
 
-.details, .cbox {
+.details,
+.cbox {
   border-top: 4px solid gray;
   margin: 0px;
+}
+
+.cbox input[type=checkbox] {
+  display: none;
+}
+
+.cbox input[type=checkbox] + label {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  background-color: #fab093;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px red;
+  border-radius: 20px;
+}
+
+.cbox input[type=checkbox] + label:hover {
+  background-color: whitesmoke;
+  font-weight: bold;
+}
+
+.cbox input[type=checkbox]:checked + label {
+  background-color: lightskyblue;
+}
+
+.cbox input[type=checkbox]:checked + label:hover {
+  background-color: whitesmoke;
+  font-weight: bold;
 }
 
 img {
   margin: 0px;
 }
 
-details, p {
+details,
+p {
   margin: 10px 30px;
+}
+
+.flexcont {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
