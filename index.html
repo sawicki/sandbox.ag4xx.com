@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SandBox</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SandBox</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://use.fontawesome.com/dc2c7c1e7f.js"></script>
+  </head>
+  <body>
     <div class="container">
       <h2>Sandbox</h2>
-      <div>div 1</div>
-      <div>div 2</div>
-      <div>div 3</div>
-   
-    </div>
+      <p>This is a sandbox to play with html/css etc before puting it into projects.</p>
+
+      <section class="details">
+
+        <details>
+          <summary>Detail tags. Click on any of the arrows to expand item</summary>
   
-</body>
+          <div>
+            <details>
+              <summary
+                >FlightAware Receiver on the east window <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
+              ></summary>
+              <p>
+                <img src="http://placekitten.com/150/200?image=1" alt="" style="float: right;" />
+                Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+                award-winning fireworks and seasonal special events.
+              </p>
+              <div class="clearfix"></div>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary
+                >FlightAware Receiver on the west side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
+              ></summary>
+              <p>
+                <img src="http://placekitten.com/150/200?image=4" alt="" style="float: left;" />
+                Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+                award-winning fireworks and seasonal special events.
+              </p>
+              <div class="clearfix"></div>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary
+                >adsbExchange Receiver on the east side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
+              ></summary>
+              <p>
+                <img src="http://placekitten.com/150/200?image=6" alt="" style="float: right;" />
+                Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+                award-winning fireworks and seasonal special events.
+              </p>
+              <div class="clearfix"></div>
+            </details>
+          </div>
+       </section>  <!--  Closes details -->
+       
+     <section class="cbox">
+
+      <details>
+        <summary>Hidden Checkbox section</summary>
+        <p>test</p>
+      </details>
+     </section>
+      <footer>
+        <div>Left</div>
+        <div>Middle</div>
+        <div>Right</div>
+      </footer>
+    </div>
+  </body>
 </html>
