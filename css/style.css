@@ -1,0 +1,50 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: linen;
+  width: 960px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+div {
+  margin: 5px 25px;
+  padding: 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+div.clearfix {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fa-hand-pointer-o {
+  color: red;
+}
+
+.details, .cbox {
+  border-top: 4px solid gray;
+  margin: 0px;
+}
+
+img {
+  margin: 0px;
+}
+
+details, p {
+  margin: 10px 30px;
+}
+
+footer {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid gray;
+}
+/*# sourceMappingURL=style.css.map */
