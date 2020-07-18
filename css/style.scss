@@ -1,6 +1,11 @@
-// * {border: 1px solid red;}
+* {
+  margin: 0px;
+  padding: 0px;
+  // border: 1px solid red;
+}
 body {
   background-color: gray;
+  margin-top: 20px;
 }
 .container {
   background-color: linen;
@@ -33,13 +38,14 @@ div.clearfix {
 }
 
 .cbox {
-  input[type=checkbox] {
+  input[type='checkbox'] {
     display: none;
 
     + label {
       display: inline-block;
       height: 50px;
       width: 150px;
+      margin: auto;
       background-color: rgb(250, 176, 147);
       display: flex;
       justify-content: space-around;
@@ -47,20 +53,31 @@ div.clearfix {
       cursor: pointer;
       border: solid 2px red;
       border-radius: 20px;
+      box-shadow: 5px 3px gray;
       &:hover {
         background-color: whitesmoke;
         font-weight: bold;
       }
-      
+    }
+    ~ div {
+      display: none;
     }
   }
-  input[type=checkbox]:checked {
-    +label{
+  input[type='checkbox']:checked {
+    + label {
       background-color: lightskyblue;
+      transform: translateY(4px);
       &:hover {
         background-color: whitesmoke;
         font-weight: bold;
       }
+    }
+  }
+  input[type='checkbox']:checked {
+    ~ div {
+      display: block;
+
+      transform: translateY(4px);
     }
   }
 }
@@ -74,9 +91,34 @@ p {
   margin: 10px 30px;
 }
 
-.flexcont {
+div.flexcont {
   display: flex;
   justify-content: space-around;
+}
+
+div.kittenpens {
+  // height: 200px;
+  width: 30%;
+  margin: 0px;
+  padding: 0px;
+  // display:inline-block;
+  // width:1000px;
+}
+
+.photo {
+  //  border:solid 1px black;
+  margin: auto;
+  padding: 0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    display:block;
+    height:auto;
+    margin:auto;
+    padding:15px;
+  }
+  // width:150px;
 }
 footer {
   margin: 10px 0px;

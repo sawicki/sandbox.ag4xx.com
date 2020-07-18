@@ -1,5 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: gray;
+  margin-top: 20px;
 }
 
 .container {
@@ -34,14 +40,15 @@ div.clearfix {
   margin: 0px;
 }
 
-.cbox input[type=checkbox] {
+.cbox input[type='checkbox'] {
   display: none;
 }
 
-.cbox input[type=checkbox] + label {
+.cbox input[type='checkbox'] + label {
   display: inline-block;
   height: 50px;
   width: 150px;
+  margin: auto;
   background-color: #fab093;
   display: flex;
   justify-content: space-around;
@@ -49,20 +56,31 @@ div.clearfix {
   cursor: pointer;
   border: solid 2px red;
   border-radius: 20px;
+  box-shadow: 5px 3px gray;
 }
 
-.cbox input[type=checkbox] + label:hover {
+.cbox input[type='checkbox'] + label:hover {
   background-color: whitesmoke;
   font-weight: bold;
 }
 
-.cbox input[type=checkbox]:checked + label {
+.cbox input[type='checkbox'] ~ div {
+  display: none;
+}
+
+.cbox input[type='checkbox']:checked + label {
   background-color: lightskyblue;
+  transform: translateY(4px);
 }
 
-.cbox input[type=checkbox]:checked + label:hover {
+.cbox input[type='checkbox']:checked + label:hover {
   background-color: whitesmoke;
   font-weight: bold;
+}
+
+.cbox input[type='checkbox']:checked ~ div {
+  display: block;
+  transform: translateY(4px);
 }
 
 img {
@@ -74,9 +92,30 @@ p {
   margin: 10px 30px;
 }
 
-.flexcont {
+div.flexcont {
   display: flex;
   justify-content: space-around;
+}
+
+div.kittenpens {
+  width: 30%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.photo {
+  margin: auto;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  display: block;
+  height: auto;
+  margin: auto;
+  padding: 15px;
 }
 
 footer {
