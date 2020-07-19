@@ -1,0 +1,99 @@
+
+
+.w3schools{
+  .toggle__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toggle__text-label {
+    color: #ff4d62;
+    font-weight: bold;
+    margin-right: 0.75rem;
+  }
+  
+  .toggle__text-label:hover {
+    cursor: pointer;
+  }
+  
+  /* Hide the checked box - only used for it's 'checked' property */
+  .toggle__input {
+    display: none;
+  }
+  
+  /* The background of the toggle */
+  .toggle__track {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+  
+  .toggle__track:before,
+  .toggle__track:after {
+    color: #ccc;
+    content: "Off";
+    display: block;
+    position: absolute;
+    right: 1rem;
+    text-shadow: 0 1px 1px #ffffff;
+    transition: all 0.3s ease-in;
+    z-index: 9;
+  }
+  
+  .toggle__track:before {
+    color: #ffffff;
+    content: "On";
+    left: 1rem;
+    text-shadow: none;
+  }
+  
+  .toggle__input:checked ~ .toggle:before {
+    left: 3.35rem;
+  }
+  
+  .toggle__input:checked ~ .toggle {
+    background-color: #3fc380;
+  }
+  
+  .toggle:before {
+    background-color: #ffffff;
+    border: 1px solid #ff4d62;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.2);
+    content: "";
+    display: block;
+    left: 0.15rem;
+    height: 2.3rem;
+    position: absolute;
+    width: 2.3rem;
+    transition: 0.3s cubic-bezier(0.54, 1.7, 0.5, 1);
+    z-index: 10;
+  }
+  
+  .toggle {
+    background-color: #f1f1f1;
+    border-radius: 1.25rem;
+    box-shadow: inset 0 0.15rem 0.25rem rgba(0, 0, 0, 0.25);
+    box-sizing: content-box;
+    display: block;
+    height: 2.3rem;
+    padding: 0.15rem;
+    position: relative;
+    transition: background-color 0.3s ease-in;
+    transition-delay: 0.1s;
+    width: 5.5rem;
+  }
+  
+  .toggle:hover {
+    cursor: pointer;
+  }
+  
+  .toggle__input:checked ~ .toggle .toggle__track:after {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  
+  
+}

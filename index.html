@@ -1,118 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SandBox</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://use.fontawesome.com/dc2c7c1e7f.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h2>Sandbox</h2>
-        <p>This is a sandbox to play with html/css etc before puting it into projects. Borders might be set on for every element at times while I debug my spacing.  A lot of this is based on the <a href="https://css-tricks.com/the-checkbox-hack/">CSS-Tricks Article</a></p>
-      </header>
 
-      <section class="details">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SandBox</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://use.fontawesome.com/dc2c7c1e7f.js"></script>
+</head>
 
-        <details>
-          <summary>Detail tags. Click on any of the arrows to expand item</summary>
-  
-          <div>
-            <details>
-              <summary
-                >FlightAware Receiver on the east window <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
-              ></summary>
-              <p>
-                <img src="http://placekitten.com/150/200?image=1" alt="" style="float: right;" />
-                Kitten supplied by  <a href="http://placekitten.com/">PlaceKitten</a>. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis, nihil id minima voluptatem quos maxime alias harum necessitatibus temporibus quam laboriosam repellendus quas cupiditate atque recusandae rem fugiat placeat.
-              </p>
-              <div class="clearfix"></div>
-            </details>
-          </div>
-          <div>
-            <details>
-              <summary
-                >FlightAware Receiver on the west side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
-              ></summary>
-              <p>
-                <img src="http://placekitten.com/150/200?image=4" alt="" style="float: left;" />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam quibusdam dolorum eaque. Quod optio dolore unde consequuntur, atque laboriosam officiis deserunt fugiat aliquam assumenda debitis fugit deleniti. Obcaecati, animi.
-              </p>
-              <div class="clearfix"></div>
-            </details>
-          </div>
-          <div>
-            <details>
-              <summary
-                >adsbExchange Receiver on the east side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i
-              ></summary>
-              <p>
-                <img src="http://placekitten.com/150/200?image=6" alt="" style="float: right;" />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid officiis repudiandae, tenetur vero ducimus, debitis similique doloremque numquam deserunt nulla repellendus velit quaerat nesciunt animi nemo illo reiciendis mollitia?
-              </p>
-              <div class="clearfix"></div>
-            </details>
-          </div>
-       </section>  <!--  Closes details -->
-       
-     <section class="cbox">
+<body>
+  <div class="container">
+    <header>
+      <h2>Sandbox</h2>
+      <p>This is a sandbox to play with html/css etc before puting it into projects. Borders might be set on for every
+        element at times while I debug my spacing. A lot of this is based on the <a
+          href="https://css-tricks.com/the-checkbox-hack/">CSS-Tricks Article</a></p>
+    </header>
+
+    <section class="details">
+
+      <details>
+        <summary>Detail tags. Click on any of the arrows to expand item</summary>
+
+        <div>
+          <details>
+            <summary>FlightAware Receiver on the east window <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+            </summary>
+            <p>
+              <img src="http://placekitten.com/150/200?image=1" alt="" style="float: right;" />
+              Kitten supplied by <a href="http://placekitten.com/">PlaceKitten</a>. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Porro corporis, nihil id minima voluptatem quos maxime alias harum
+              necessitatibus temporibus quam laboriosam repellendus quas cupiditate atque recusandae rem fugiat placeat.
+            </p>
+            <div class="clearfix"></div>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>FlightAware Receiver on the west side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+            </summary>
+            <p>
+              <img src="http://placekitten.com/150/200?image=4" alt="" style="float: left;" />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam quibusdam dolorum eaque. Quod optio
+              dolore unde consequuntur, atque laboriosam officiis deserunt fugiat aliquam assumenda debitis fugit
+              deleniti. Obcaecati, animi.
+            </p>
+            <div class="clearfix"></div>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>adsbExchange Receiver on the east side <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+            </summary>
+            <p>
+              <img src="http://placekitten.com/150/200?image=6" alt="" style="float: right;" />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid officiis repudiandae, tenetur vero
+              ducimus, debitis similique doloremque numquam deserunt nulla repellendus velit quaerat nesciunt animi nemo
+              illo reiciendis mollitia?
+            </p>
+            <div class="clearfix"></div>
+          </details>
+        </div>
+    </section> <!--  Closes details -->
+
+    <section class="cbox">
 
       <details>
         <summary>Hidden Checkbox section</summary>
         <p>
-          Buttons have state but have not been fully implemented
+
         </p>
         <div class="flexcont">
-          <div class="kittenpens">  
+          <div class="kittenpens">
             <input type="checkbox" name="" id="leftcheck">
-            <label for="leftcheck">Left Kitten</label>
-            <div class="photo"><img src="http://placekitten.com/150/200?image=1" alt=""  />
-             
+            <label for="leftcheck" class="kit">Left Kitten</label>
+            <div class="photo"><img src="http://placekitten.com/150/200?image=1" alt="" /> </div>
           </div>
-          </div>
-          <div class="kittenpens">         
+          <div class="kittenpens">
             <input type="checkbox" name="" id="middlecheck">
-            <label for="middlecheck">Middle Kitten</label>
-            <div class="photo"><img src="http://placekitten.com/150/200?image=4" alt=""  />
+            <label for="middlecheck" class="kit">Middle Kitten</label>
+            <div class="photo"><img src="http://placekitten.com/150/200?image=4" alt="" /> </div>
           </div>
-          </div>
-          <div class="kittenpens">         
+          <div class="kittenpens">
             <input type="checkbox" name="" id="rightcheck">
-            <label for="rightcheck">Right Kitten</label>
-            <div class="photo"><img src="http://placekitten.com/150/200?image=6" alt=""  />
+            <label for="rightcheck" class="kit">Right Kitten</label>
+            <div class="photo"><img src="http://placekitten.com/150/200?image=6" alt="" /> </div>
           </div>
-        </div>
       </details>
-      
-     </section>
-     <section class="cbox">
+
+    </section>
+    <section class="cbox">
 
       <details>
         <summary>Toggle Switches</summary>
         <p>
-          Implenting a couple of CSS only toggle switches
+          Implenting a couple of CSS only toggle switches.  <a href="https://codepen.io/TBernard/pen/GEpaqa">Codepen Reference</a>. Nice affect but a lot of work.
         </p>
         <div class="flexcont">
-          <div class="kittenpens" style="text-align: center;">  
-            Switch 1
+          <div class="w3schools" style="text-align: center;">
+            <div class="toggle__container">
+              <label class="toggle__text-label" for="input">
+                Get Cat 1
+              </label>
+
+              <input class="toggle__input" id="input1" type="checkbox" />
+
+              <label class="toggle" for="input1">
+                <span class="toggle__track"></span>
+              </label>
+              <div class="photo"><img src="http://placekitten.com/150/200?image=3" alt="" /> </div>
+            </div>
+
           </div>
-          
-          <div class="kittenpens" style="text-align: center;"> 
-            Switch 2
+
+          <div class="w3schools" style="text-align: center;">
+            <div class="toggle__container">
+              <label class="toggle__text-label" for="input">
+                Get Cat 2
+              </label>
+
+              <input class="toggle__input" id="input" type="checkbox" />
+
+              <label class="toggle" for="input">
+                <span class="toggle__track"></span>
+              </label>
+              <div class="photo"><img src="http://placekitten.com/150/200?image=6" alt="" /> </div>
+            </div>
+
           </div>
         </div>
-          
+
       </details>
-      
-     </section>
-      <footer >
-        <div>Left</div>
-        <div>Middle</div>
-        <div>Right</div>
-      </footer>
-    </div>
-  </body>
+
+    </section>
+    <footer>
+      <div>Left</div>
+      <div>Middle</div>
+      <div>Right</div>
+    </footer>
+  </div>
+</body>
+
 </html>

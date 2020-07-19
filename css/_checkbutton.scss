@@ -1,0 +1,56 @@
+// ********************************
+// Start of button section
+// ********************************
+.cbox {
+  border-top: 4px solid gray;
+  margin: 0px;
+}
+
+.cbox {
+  input[type='checkbox'] {
+    display: none;
+
+    + label.kit {
+      display: inline-block;
+      height: 50px;
+      width: 150px;
+      margin: auto;
+      background-color: rgb(250, 176, 147);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+      border: solid 2px red;
+      border-radius: 20px;
+      box-shadow: 5px 3px gray;
+      &:hover {
+        background-color: whitesmoke;
+        font-weight: bold;
+      }
+    }
+    ~ div {
+      display: none;
+    }
+  }
+  input[type='checkbox']:checked {
+    + label.kit {
+      background-color: lightskyblue;
+      transform: translateY(4px);
+      &:hover {
+        background-color: whitesmoke;
+        font-weight: bold;
+      }
+    }
+  }
+  input[type='checkbox']:checked {
+    ~ div {
+      display: block;
+
+      transform: translateY(4px);
+    }
+  }
+}
+
+// ******************************
+// End of Button CSS
+// ******************************
