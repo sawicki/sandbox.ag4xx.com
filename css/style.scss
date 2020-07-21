@@ -11,7 +11,14 @@ body {
   background-color: linen;
   width: 960px;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 25px;
+}
+.toptop {
+  height: 25px;
+  background-color: lightsalmon;
+  margin: 0px;
+  padding: 0;
+  border-radius: 25px 25px 0 0;
 }
 
 div {
@@ -32,7 +39,6 @@ div.clearfix {
 }
 
 .details,
-
 img {
   margin: 0px;
 }
@@ -60,14 +66,14 @@ div.kittenpens {
   //  border:solid 1px black;
   margin: auto;
   padding: 0px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  img{
-    display:block;
-    height:auto;
-    margin:auto;
-    padding:15px;
+  img {
+    display: block;
+    height: auto;
+    margin: auto;
+    padding: 15px;
   }
   // width:150px;
 }
@@ -77,4 +83,4 @@ footer {
   justify-content: space-between;
   border-top: 4px solid gray;
 }
-@import 'checkbutton','toggleswitch','mytop';
+@import 'checkbutton', 'toggleswitch', 'mytop';
