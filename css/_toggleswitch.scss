@@ -17,12 +17,12 @@
     cursor: pointer;
   }
   
-  /* Hide the checked box - only used for it's 'checked' property */
+  //* Hide the checked box - only used for it's 'checked' property 
   .toggle__input {
     display: none;
   }
   
-  /* The background of the toggle */
+  //* The background of the toggle 
   .toggle__track {
     align-items: center;
     display: flex;

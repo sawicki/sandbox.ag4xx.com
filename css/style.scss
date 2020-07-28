@@ -91,4 +91,11 @@ background-color: lightsalmon;
   border-radius: 0 0 25px 25px;
 
 }
+
+summary{
+  transition: all .3s;
+}
+summary:hover{font-size: 120%;
+color:purple;
+}
 @import 'checkbutton', 'toggleswitch', 'mytop';

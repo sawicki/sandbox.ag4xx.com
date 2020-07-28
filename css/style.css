@@ -70,7 +70,6 @@ div.kittenpens {
   justify-content: center;
   align-items: center;
 }
-
 .photo img {
   display: block;
   height: auto;
@@ -87,9 +86,17 @@ footer {
   background-color: lightsalmon;
   border-radius: 0 0 25px 25px;
 }
-
 footer div {
   margin: 0 2em 0 2em;
+}
+
+summary {
+  transition: all 0.3s;
+}
+
+summary:hover {
+  font-size: 120%;
+  color: purple;
 }
 
 .cbox {
@@ -97,11 +104,10 @@ footer div {
   margin: 0px;
 }
 
-.cbox input[type='checkbox'] {
+.cbox input[type=checkbox] {
   display: none;
 }
-
-.cbox input[type='checkbox'] + label.kit {
+.cbox input[type=checkbox] + label.kit {
   display: inline-block;
   height: 50px;
   width: 150px;
@@ -115,34 +121,24 @@ footer div {
   border-radius: 20px;
   box-shadow: 5px 3px gray;
 }
-
-.cbox input[type='checkbox'] + label.kit:hover {
+.cbox input[type=checkbox] + label.kit:hover {
   background-color: whitesmoke;
   font-weight: bold;
 }
-
-.cbox input[type='checkbox'] ~ div {
+.cbox input[type=checkbox] ~ div {
   display: none;
 }
-
-.cbox input[type='checkbox']:checked + label.kit {
+.cbox input[type=checkbox]:checked + label.kit {
   background-color: lightskyblue;
   transform: translateY(4px);
 }
-
-.cbox input[type='checkbox']:checked + label.kit:hover {
+.cbox input[type=checkbox]:checked + label.kit:hover {
   background-color: whitesmoke;
   font-weight: bold;
 }
-
-.cbox input[type='checkbox']:checked ~ div {
+.cbox input[type=checkbox]:checked ~ div {
   display: block;
   transform: translateY(4px);
-}
-
-.w3schools {
-  /* Hide the checked box - only used for it's 'checked' property */
-  /* The background of the toggle */
 }
 
 .w3schools .toggle__container {
@@ -150,27 +146,22 @@ footer div {
   display: flex;
   flex-direction: column;
 }
-
 .w3schools .toggle__text-label {
   color: #ff4d62;
   font-weight: bold;
   margin-right: 0.75rem;
 }
-
 .w3schools .toggle__text-label:hover {
   cursor: pointer;
 }
-
 .w3schools .toggle__input {
   display: none;
 }
-
 .w3schools .toggle__track {
   align-items: center;
   display: flex;
   height: 100%;
 }
-
 .w3schools .toggle__track:before,
 .w3schools .toggle__track:after {
   color: #ccc;
@@ -182,22 +173,18 @@ footer div {
   transition: all 0.3s ease-in;
   z-index: 9;
 }
-
 .w3schools .toggle__track:before {
   color: #ffffff;
   content: "On";
   left: 1rem;
   text-shadow: none;
 }
-
 .w3schools .toggle__input:checked ~ .toggle:before {
   left: 3.35rem;
 }
-
 .w3schools .toggle__input:checked ~ .toggle {
   background-color: #3fc380;
 }
-
 .w3schools .toggle:before {
   background-color: #ffffff;
   border: 1px solid #ff4d62;
@@ -213,7 +200,6 @@ footer div {
   transition: 0.3s cubic-bezier(0.54, 1.7, 0.5, 1);
   z-index: 10;
 }
-
 .w3schools .toggle {
   background-color: #f1f1f1;
   border-radius: 1.25rem;
@@ -227,11 +213,9 @@ footer div {
   transition-delay: 0.1s;
   width: 5.5rem;
 }
-
 .w3schools .toggle:hover {
   cursor: pointer;
 }
-
 .w3schools .toggle__input:checked ~ .toggle .toggle__track:after {
   color: #ffffff;
   text-shadow: none;
@@ -281,4 +265,5 @@ header {
 p {
   padding: 0.5em;
 }
+
 /*# sourceMappingURL=style.css.map */
